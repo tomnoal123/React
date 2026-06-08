@@ -9,8 +9,7 @@ app.use(cors());
 
 app.use(express.json());
 
-mongoose.connect("mongodb://appUser:haslo@127
-0.0.1:27017/twojaBaza?authSource=admin")
+mongoose.connect("mongodb://appUser:haslo@127.0.0.1:27017/twojaBaza?authSource=admin")
   .then(() => console.log("Database connected"))
   .catch((err) => console.log(err));
 
